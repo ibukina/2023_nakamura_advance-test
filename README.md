@@ -46,7 +46,7 @@ managementTable
 
 ## ER 図
 
-![usecase drawio](https://github.com/ibukina/2023_nakamura_advance/assets/142294463/964cf92c-1878-422b-876b-1f20510ef441)
+![usecase drawio](https://github.com/ibukina/2023_nakamura_advance-test/assets/142294463/4f526433-9f43-4145-9398-68e5285cf73e)
 
 ## 補足
 
