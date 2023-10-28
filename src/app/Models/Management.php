@@ -10,7 +10,7 @@ class Management extends Model
 {
     use HasFactory;
 
-    protected $fillable=['id'];
+    protected $fillable=['name'];
 
     public function contacts()
     {
