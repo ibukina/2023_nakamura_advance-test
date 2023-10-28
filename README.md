@@ -39,10 +39,10 @@ phpMyAdmin 5.2.1
 ## テーブル設計
 
 contactsTable  
-![localhost_8080_index php_route=_table_structure db=laravel_db table=contacts](https://github.com/ibukina/2023_nakamura_advance/assets/142294463/c2bdd216-c50b-4802-9129-21059cb636e0)
+![localhost_8080_index php_route=_table_structure db=laravel_db table=contacts (1)](https://github.com/ibukina/2023_nakamura_advance-test/assets/142294463/c1e7b893-ab83-4ce6-99e6-727a67cea5fb)
 
-managementsTable  
-![localhost_8080_index php_route=_sql pos=0 db=laravel_db table=managements](https://github.com/ibukina/2023_nakamura_advance/assets/142294463/708be2a9-ad17-4746-85c6-fda89fe8f750)
+managementTable  
+![localhost_8080_index php_route=_table_structure db=laravel_db table=management](https://github.com/ibukina/2023_nakamura_advance-test/assets/142294463/113bf31c-faa1-47e9-9477-ba9a27b9f56b)
 
 ## ER 図
 
