@@ -14,58 +14,51 @@
             <tr class="table-row">
                 <th class="table-header">お名前</th>
                 <td class="table-data">
+                    <div class="table-data_fullname">{{$contact['last_name']}} {{$contact['first_name']}}
+                    </div>
                     <!-- <input type="text" name="last_name" value="{{$contact['last_name']}}" readonly> -->
-                    {{$contact['last_name']}}
                     <!-- <input type="text" name="first_name" value="{{$contact['first_name']}}" readonly> -->
-                    {{$contact['first_name']}}
+                    <!-- {{$contact['first_name']}} -->
                 </td>
             </tr>
             <tr class="table-row">
                 <th class="table-header">性別</th>
                 <td class="table-data">
-                    <!-- <input type="radio" name="gender" value="{{$contact['gender']}}" readonly> -->
-                    @if
-                    {{ $contact['gender'][]==1;
-                    echo "男性"}}
-                    @else
-                    {{ $contact['gender'][]==2;
-                    echo "女性" }}
+                    @if($contact['gender']==1)
+                    <div class="table-data_gender">男性</div>
+                    @else($contact['gender']==2)
+                    <div class="table-data_gender">女性</div>
                     @endif
                 </td>
             </tr>
             <tr class="table-row">
                 <th class="table-header">メールアドレス</th>
                 <td class="table-data">
-                    <!-- <input type="email" name="email" value="{{$contact['email']}}" readonly> -->
-                    {{$contact['email']}}
+                    <div class="table-data_email">{{$contact['email']}}</div>
                 </td>
             </tr>
             <tr class="table-row">
                 <th class="table-header">郵便番号</th>
                 <td class="table-data">
-                    <!-- <input type="text" name="postcode" value="{{$contact['postcode']}}" readonly> -->
-                    {{$contact['postcode']}}
+                    <div class="table-data_postcode">{{$contact['postcode']}}</div>
                 </td>
             </tr>
             <tr class="table-row">
                 <th class="table-header">住所</th>
                 <td class="table-data">
-                    <!-- <input type="text" name="address" value="{{$contact['address']}}" readonly> -->
-                    {{$contact['address']}}
+                    <div class="table-data_address">{{$contact['address']}}</div>
                 </td>
             </tr>
             <tr class="table-row">
                 <th class="table-header">建物名</th>
                 <td class="table-data">
-                    <!-- <input type="text" name="building_name" value="{{$contact['building_name']}}" readonly> -->
-                    {{$contact['building_name']}}
+                    <div class="table-data_building_name">{{$contact['building_name']}}</div>
                 </td>
             </tr>
             <tr class="table-row">
                 <th class="table-header">ご意見</th>
                 <td class="table-data">
-                    <!-- <input type="textarea" name="opinion" value="{{$contact['opinion']}}" readonly> -->
-                    {{$contact['opinion']}}
+                    <div class="table-data_opinion">{{$contact['opinion']}}</div>
                 </td>
             </tr>
             @endforeach

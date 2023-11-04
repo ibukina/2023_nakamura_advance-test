@@ -1,9 +1,21 @@
-.table-data_item{
-    font-size: 23px;
+.table-data_gender{
+    position: absolute;
+    margin-left: 350px;
+    display: flex;
+    justify-content: flex-start;
 }
 
-.table-data_item-input {
-    padding: 20px 100px;
+.table-data_item_gender{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.table-data_item{
+    font-size: 30px;
+}
+
+.table-data_item-name{
+    padding: 20px 85px;
     margin: 15px 20px;
     border: 3px solid #BBBBBB;
     border-radius: 7px;
@@ -12,11 +24,30 @@
 }
 
 .table-data_item-radio{
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
+    margin: 15px 50px;
+    border: 3px solid #BBBBBB;
 }
 
-.table-data_item-radio {
-    width: 30px;
-    height: 30px;
+.table-data_text{
+    padding-top: 20px;
+}
+
+.table-data_item-input {
+    padding: 20px 350px;
+    margin: 15px 20px;
+    border: 3px solid #BBBBBB;
+    border-radius: 7px;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.table-data_item-opinion{
+    padding: 80px 350px;
+    margin: 15px 20px;
+    border: 3px solid #BBBBBB;
+    border-radius: 7px;
+    font-size: 23px;
+    font-weight: bold;
 }

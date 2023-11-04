@@ -10,7 +10,14 @@ class ManagementController extends Controller
 {
     public function index()
     {
-        return view('management');
+        $managements=Management::all();
+        $manageNumber=count($managements);
+        if($manageNumber>0){
+            $manageMin=min($manageNumber);
+            $manageMax=max($manageNumber);
+        };
+
+        return view('management', compact('managements', 'manageNumber', 'manageMin', 'manageMax'));
     }
 
     public function search(Request $request)

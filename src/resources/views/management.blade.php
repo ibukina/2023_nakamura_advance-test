@@ -47,17 +47,15 @@
     </div>
     <div class="result_container">
         <div class="result_page">
-            @if(count($managements) > 0)
             <div class="result_page-number">
-                全{{ count($management) }}件中{{ count($management) }}~{{ count($management) }}件
+                全{{ $manageNumber }}件中{{ $manageMin }}~{{ manageMax }}件
             </div>
-            @endif
             <div class="result_page-switching">
             </div>
         </div>
         <form class="result_table-form" action="/managements/delete" method="post">
-            @method('DELETE')
-            @csrf
+        @method('DELETE')
+        @csrf
         <table class="result_table">
             <tr class="table-row">
                 <th class="table-header">ID</th>

@@ -18,10 +18,10 @@
                 <th class="table-header">お名前</th>
                 <td class="table-data">
                     <label class="table-data_item">
-                        <input class="table-data_item-input table-data_item-name"  type="name" name="last_name" value="{{ old('last_name') }}">
+                        <input class=" table-data_item-name"  type="name" name="last_name" value="{{ old('last_name') }}">
                     </label>
                     <label class="table-data_item">
-                        <input class="table-data_item-input table-data_item-name" type="name" name="first_name" value="{{ old('first_name') }}">
+                        <input class=" table-data_item-name" type="name" name="first_name" value="{{ old('first_name') }}">
                     </label>
                 </td>
             </tr>
@@ -43,12 +43,14 @@
             @endif
             <tr class="table-row">
                 <th class="table-header">性別</th>
-                <td class="table-data">
-                    <label class="table-data_item">
-                        <input class="table-data_item-input table-data_item-radio" type="radio" name="gender[][1]" value="{{ old('1') }}" checked>男性
+                <td class="table-data table-data_gender">
+                    <label class="table-data_item
+                    table-data_item_gender ">
+                        <input class=" table-data_item-radio" type="radio" name="gender[][1]" value="{{ old('1') }}" checked>
+                        <div class="table-data_text">男性</div>
                     </label>
-                    <label class="table-data_item">
-                        <input class="table-data_item-input table-data_item-radio" type="radio" name="gender[][2]" value="{{ old('2') }}">女性
+                    <label class="table-data_item table-data_item_gender ">
+                        <input class=" table-data_item-radio" type="radio" name="gender[][2]" value="{{ old('2') }}"><div class="table-data_text">女性</div>
                     </label>
                 </td>
             </tr>
@@ -128,7 +130,7 @@
                 <th class="table-header">ご意見</th>
                 <td class="table-data">
                     <label class="table-data_item">
-                        <input class="table-data_item-input" type="textarea" name="opinion" value="{{ old('opinion') }}">
+                        <input class="table-data_item-opinion" type="textarea" name="opinion" value="{{ old('opinion') }}">
                     </label>
                 </td>
             </tr>

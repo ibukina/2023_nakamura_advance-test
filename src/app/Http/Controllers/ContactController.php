@@ -16,30 +16,7 @@ class ContactController extends Controller
 
     public function confirm(ContactRequest $request)
     {
-        // $validator=Validator::make($request->all(),[
-            // 'fullname'=>['required', 'string', 'max:255',],
-            // 'gender'=>['required',],
-            // 'email'=>['required','string', 'email', 'max:255',],
-            // 'postcode'=>['required', 'max:8',],
-            // 'address'=>['required', 'string', 'max:255',],
-            // 'building_name'=>['string', 'max:255', 'nullable',],
-            // 'opinion'=>['string', 'required', 'max:120'],
-        // ]);
-        // $validator->validate();
-
-        // $request->validate([
-            // 'fullname'=>['required', 'string', 'max:255'],
-            // 'gender'=>['required'],
-            // 'email'=>['required','string', 'email', 'max:255'],
-            // 'postcode'=>['required', 'max:8'],
-            // 'address'=>['required', 'string', 'max:255'],
-            // 'building_name'=>['string', 'max:255', 'nullable'],
-            // 'opinion'=>['string', 'required', 'max:120'],
-        // ]);
-
-        // $contact = $request->all();
-        // $fullname=$request->only(['last_name'], ['first_name']);
-        $contacts = $request->only(['last_name', 'first_name', 'gender', 'email', 'postcode', 'address', 'building_name', 'opinion']);
+        $contacts = $request->all();
         // $result=count($contact);
         // echo $result;
         // var_dump($contact);
